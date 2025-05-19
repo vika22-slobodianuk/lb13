@@ -1,6 +1,6 @@
 from tkinter import *
  
-def Suma(event):
+def Suma(event=None):
     s=int(edit1.get())+int(edit2.get())
     res.set(s)
  
@@ -21,9 +21,9 @@ edit1.grid(row=0, column=1)
 edit2.grid(row=1, column=1)
  
 button1 = Button(root, text="Обчислити")
-root.bind("<Return>",Suma)
 button1.grid(row=0, column=2,columnspan=2, rowspan=2,sticky=W+E+N+S, padx=5, pady=5)
  
+root.bind('<Return>',Suma)
  
 mainloop()
 

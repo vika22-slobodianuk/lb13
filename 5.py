@@ -15,11 +15,10 @@ i = 0
 for color_name in colors:
     rb = Radiobutton(root, text=color_name.capitalize(), variable=val, value=color_name)
     rb.place(x=50, y=50 + i * 30)
-    root.bind('<Button-1>',color)
+    root.bind('<Return>',color)
     i += 1  
 
 label = Label(root, text="Фон мітки")
 label.place(x=120, y=180)
 
 root.mainloop()
-

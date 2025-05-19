@@ -28,7 +28,7 @@ combo.current(0) # метод current отримати індекс поточн
 btn=Button(root,text="Столиця")
 btn.grid(column=0, row=2)
 
-btn.bind("<Button-1>",Miss)
+btn.bind("<Return>",Miss)
 
 label2=Label(root,text="")
 label2.grid(column=0, row=3)

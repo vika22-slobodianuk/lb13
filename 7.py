@@ -29,4 +29,3 @@ buton1.place(x = 200 , y = 90 , width = 200)
 buton1.bind("<Button-1>",Factorial)
 
 root.mainloop()
-
